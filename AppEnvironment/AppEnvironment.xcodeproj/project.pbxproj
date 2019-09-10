@@ -10,6 +10,10 @@
 		72108A43232734C20012BE8D /* AppEnvironment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72108A39232734C20012BE8D /* AppEnvironment.framework */; };
 		72108A48232734C20012BE8D /* AppEnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72108A47232734C20012BE8D /* AppEnvironmentTests.swift */; };
 		72108A4A232734C20012BE8D /* AppEnvironment.h in Headers */ = {isa = PBXBuildFile; fileRef = 72108A3C232734C20012BE8D /* AppEnvironment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72108A54232753520012BE8D /* AppEnvironmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72108A53232753520012BE8D /* AppEnvironmentType.swift */; };
+		72108A5C232755620012BE8D /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72108A5B232755620012BE8D /* Stack.swift */; };
+		72108A5E232776CC0012BE8D /* EnvironmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72108A5D232776CC0012BE8D /* EnvironmentType.swift */; };
+		72108A60232777E60012BE8D /* UserType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72108A5F232777E60012BE8D /* UserType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		72108A42232734C20012BE8D /* AppEnvironmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppEnvironmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72108A47232734C20012BE8D /* AppEnvironmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironmentTests.swift; sourceTree = "<group>"; };
 		72108A49232734C20012BE8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72108A53232753520012BE8D /* AppEnvironmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironmentType.swift; sourceTree = "<group>"; };
+		72108A5B232755620012BE8D /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		72108A5D232776CC0012BE8D /* EnvironmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentType.swift; sourceTree = "<group>"; };
+		72108A5F232777E60012BE8D /* UserType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				72108A3C232734C20012BE8D /* AppEnvironment.h */,
+				72108A53232753520012BE8D /* AppEnvironmentType.swift */,
+				72108A5D232776CC0012BE8D /* EnvironmentType.swift */,
+				72108A5F232777E60012BE8D /* UserType.swift */,
+				72108A5B232755620012BE8D /* Stack.swift */,
 				72108A3D232734C20012BE8D /* Info.plist */,
 			);
 			path = AppEnvironment;
@@ -148,6 +160,7 @@
 				TargetAttributes = {
 					72108A38232734C20012BE8D = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					72108A41232734C20012BE8D = {
 						CreatedOnToolsVersion = 10.3;
@@ -194,6 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72108A54232753520012BE8D /* AppEnvironmentType.swift in Sources */,
+				72108A5E232776CC0012BE8D /* EnvironmentType.swift in Sources */,
+				72108A60232777E60012BE8D /* UserType.swift in Sources */,
+				72108A5C232755620012BE8D /* Stack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +358,7 @@
 		72108A4E232734C20012BE8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -360,6 +378,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.smart.fire.AppEnvironment;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -368,6 +387,7 @@
 		72108A4F232734C20012BE8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -395,6 +415,7 @@
 		72108A51232734C20012BE8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87MVER2MH8;
 				INFOPLIST_FILE = AppEnvironmentTests/Info.plist;
@@ -413,6 +434,7 @@
 		72108A52232734C20012BE8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87MVER2MH8;
 				INFOPLIST_FILE = AppEnvironmentTests/Info.plist;
